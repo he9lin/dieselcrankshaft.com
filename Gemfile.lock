@@ -107,6 +107,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    nested_form (0.1.1)
     nokogiri (1.4.4)
     orm_adapter (0.0.5)
     paperclip (2.3.11)
@@ -184,6 +185,7 @@ DEPENDENCIES
   jquery-rails (~> 0.2.6)
   launchy (= 0.3.7)
   mail
+  nested_form
   paperclip (~> 2.3.10)
   rails (= 3.0.7)
   rails_admin!
