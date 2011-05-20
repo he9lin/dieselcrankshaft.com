@@ -1,0 +1,166 @@
+@import "compass/reset";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "blueprint/typography";
+@import "blueprint/colors";
+@import "blueprint";
+
+$blueprint_grid_columns: 32;
+$blueprint_grid_width: 20px;
+$font-color: #444;
+$blueprint-font-size: 12px;
+@include blueprint-typography;
+
+@import "partials/aboutus";
+@import "partials/scrollbar";
+@import "partials/products";
+@import "partials/slides";
+
+@mixin wrapped_image(
+  $wrapper-width: 150px, $wrapper-height: 100px, 
+  $img-width: 100px, $img-height: 100px, 
+  $center: true,
+  $shadow: true,
+  $borders: true) {
+  .image-wrapper {
+    width: $wrapper-width;
+    height: $wrapper-height;
+    line-height: $wrapper-height; // necessory for vertical-align to work
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    &.transp { background: none; }
+    @if $borders {
+      border: 1px solid #CCC; 
+      padding: 2px; }
+    @if $shadow {
+      @include box-shadow(#DDD, 1px, 2px, 4px); }
+    @if $center {
+      margin: 0 auto; }
+    img { 
+      max-width: $img-width;
+      max-height: $img-height;
+      vertical-align: middle; } } }
+
+body {
+  background: url(/images/sidebg.png);
+  ul { padding: 0; margin: 0; list-style: none; }
+  .clear { clear: left; }
+  .two-col {
+    @include container;
+    width: 800px;
+    #sidebar {
+      width: 156px;
+      float: left; }
+    #content {  
+      @include column(21, true); } }
+  #container {
+    background: white url(/images/bg_top.png) no-repeat;
+    color: $font-color;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    @include border-radius(4px);
+    @include box-shadow;
+    img.icon { width:20px;height:20px;margin-right:10px;}
+    #copyright { 
+      color: $quiet-color;
+      font-size: 0.8em;
+      padding: 10px 0px 10px 285px; }
+    #footer {
+      clear: both;
+      padding: 10px 5px 6px 265px;
+      background: url(/images/footer_bg.png) no-repeat;
+      color: $quiet-color;
+      margin-left: 1px;
+      height: 16px;
+      ul {
+        float: left;
+        li {
+          float: left;
+          padding: 0 5px;
+          a { font-size: 0.9em; color: $quiet-color; } } } }
+    #sidebar {
+      .sidefill {
+        margin-left: 1px;
+        min-height: 588px;
+        background: url(/images/leftdot.png) repeat-y;
+        h3.news {
+          margin: 0;
+          padding: 10px 0;
+          font-size: 1.2em;
+          color: red;
+          text-align: center;
+          font-weight: bold; } } }
+    #navbar {
+      padding: 65px 0 83px 30px;
+      ul {
+        li {
+          padding-bottom: 2px;
+          &.current a { 
+            color: #444; 
+            background: url(/images/dot.png) 0 50% no-repeat; }
+          a { 
+            background: url(/images/circle.png) 0 50% no-repeat;
+            padding-left: 18px;
+            display: inline-block;
+            letter-spacing: 2px;
+            color: #aaa;
+            font-family: arial;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase; } } } }
+    #content {
+      ul {
+        list-style: none; }
+      .image-wrapper { text-align: center;  }
+      .rside-fill {
+        float: left;
+        width: 150px;
+        padding-left: 15px;
+        h3.side-header {
+          margin: 0;
+          padding: 10px 0;
+          font-size: 1.2em;
+          color: red;
+          text-align: center;
+          font-weight: bold; }
+        ul li { 
+          @include wrapped_image(100px,140px,94px,134px);
+          text-align: center;
+          padding-bottom: 10px; } }
+      #main-content {
+        margin-top: 1px;
+        padding: 12px 10px 10px 10px; 
+        background: url(/images/rightdot.png) repeat-y;
+        width: 430px;
+        float: left;
+         #contacts {
+          padding: 5px 5px 5px 10px;
+          span { margin-bottom: 10px; line-height: 50px; }
+          li.tel, li.email { 
+            line-height: 20px; 
+            height: 20px; 
+            vertical-align:middle;
+            padding: 2px 0; } } }
+      h3.sub-header {
+        font-size: 1.2em;
+        color: $quiet-color; }
+      h2.header {
+        background: url(/images/arrow1.jpg) 0 50% no-repeat;
+        text-indent: 20px;
+        margin-top: 20px;
+        color: red;
+        font-size: 1.5em;
+        margin-bottom: 3px; }
+      #top-logo {
+        height: 90px;
+        img { 
+          margin: 10px 5px 0px 20px;
+          float: left; }
+        h2 {
+          padding-top: 24px;
+          color: red;
+          font-size: 1.5em;
+          font-weight: bold;
+          display: inline-block; } } } } }

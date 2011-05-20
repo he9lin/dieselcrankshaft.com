@@ -1,0 +1,10 @@
+.scrolldiv { width: 430px; clear: both; margin-top: 10px; }
+.scrolldiv .viewport { width: 410px; height: 450px; overflow: hidden; position: relative; }
+.scrolldiv .overview { list-style: none; position: absolute; left: 0; top: 0; }
+.scrolldiv .thumb .end,
+.scrolldiv .thumb { background-color: pink; }
+.scrolldiv .scrollbar { position: relative; float: right; width: 15px; }
+.scrolldiv .track { background-color: #f2f2f2; height: 100%; width:13px; position: relative; padding: 0 1px; }
+.scrolldiv .thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+.scrolldiv .thumb .end { overflow: hidden; height: 5px; width: 13px; }
+.scrolldiv .disable{ display: none; }

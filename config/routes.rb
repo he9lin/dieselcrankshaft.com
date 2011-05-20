@@ -2,6 +2,9 @@ Cranker::Application.routes.draw do
   devise_for :users
   
   root :to => "home#index"
+  match 'about'    => 'home#about',    :as => :about
+  match 'contacts' => 'home#contacts', :as => :contacts
+  resources :products
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
