@@ -2,7 +2,6 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.7'
 
-gem 'sqlite3'
 gem 'devise', '~> 1.3.3'
 gem 'inherited_resources', '~> 1.2.2'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
@@ -20,6 +19,7 @@ group :development, :test do
   gem 'cucumber-rails', :git => 'git://github.com/fd/cucumber-rails.git' # fix Capybara::Driver::RackTest::Node error
   gem 'watchr'
   gem "mail"
+  gem 'sqlite3'
 end
 
 group :test do
