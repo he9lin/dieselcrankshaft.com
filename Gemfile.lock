@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/sferik/rails_admin.git
-  revision: 14882c71a23e96d6922fe5152170629f59b46749
+  revision: ceb7384b01ed7a40bf0dca46e8a1dca19c9eda07
   specs:
     rails_admin (0.0.1)
       builder (~> 2.1.0)
@@ -189,6 +189,7 @@ DEPENDENCIES
   paperclip (~> 2.3.10)
   rails (= 3.0.7)
   rails_admin!
+  rake (= 0.8.7)
   rspec-rails (~> 2.6.0.rc6)
   sass (= 3.1.1)
   sqlite3

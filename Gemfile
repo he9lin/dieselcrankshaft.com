@@ -13,6 +13,7 @@ gem 'compass', '>= 0.11.1'
 gem 'paperclip', '~> 2.3.10'
 gem "nested_form"
 gem 'decent_exposure'
+gem 'rake', '0.8.7'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.6.0.rc6'
