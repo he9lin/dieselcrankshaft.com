@@ -17,6 +17,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.6.0.rc6'
   gem 'cucumber-rails', :git => 'git://github.com/fd/cucumber-rails.git' # fix Capybara::Driver::RackTest::Node error
   gem 'watchr'
+  gem "mail"
 end
 
 group :test do

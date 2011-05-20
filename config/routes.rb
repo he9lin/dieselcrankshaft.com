@@ -4,6 +4,7 @@ Cranker::Application.routes.draw do
   root :to => "home#index"
   match 'about'    => 'home#about',    :as => :about
   match 'contacts' => 'home#contacts', :as => :contacts
+  post 'inquery' => 'home#inquery', :as => :inquery
   resources :products
   # The priority is based upon order of creation:
   # first created -> highest priority.

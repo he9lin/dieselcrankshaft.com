@@ -21,6 +21,15 @@
    <%= csrf_meta_tag %>
 </head>
 <body>
+  <%- unless flash.empty? %>
+  <div id="flash">
+    <%- flash.each do |name, msg| %>
+      <div class="<%= name%>">
+        <%= msg %>
+      </div>
+    <%- end %>
+  </div>  
+  <%- end %>
   <div class='two-col' id='container'>
     <div id='sidebar'>
       <div id="navbar">

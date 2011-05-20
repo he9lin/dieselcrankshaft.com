@@ -183,6 +183,7 @@ DEPENDENCIES
   inherited_resources (~> 1.2.2)
   jquery-rails (~> 0.2.6)
   launchy (= 0.3.7)
+  mail
   paperclip (~> 2.3.10)
   rails (= 3.0.7)
   rails_admin!

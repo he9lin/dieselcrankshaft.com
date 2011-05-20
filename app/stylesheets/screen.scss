@@ -44,6 +44,20 @@ $blueprint-font-size: 12px;
 
 body {
   background: url(/images/sidebg.png);
+	#flash {
+		margin-bottom: 10px;
+		div {
+			text-align: center;
+			padding: 5px;
+			font-size: 1.2em;
+			color: #333;
+			background-color: yellow;
+			&.error{ background-color: red; } } }
+  #inquery-form{
+		input#subject{width: 205px;}
+	  textarea{
+			width: 200px;
+			height: 90px; } }
   ul { padding: 0; margin: 0; list-style: none; }
   .clear { clear: left; }
   .two-col {

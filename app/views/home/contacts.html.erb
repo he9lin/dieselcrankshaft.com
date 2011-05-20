@@ -37,7 +37,26 @@
       </ul>
     </dd>
   </dl>
+  <br />
+  <dl>
+    <dt>Submit your inquery here!</dt>
+    <dd>
+      <div id="inquery-form">
+        <%= form_tag('/inquery') do -%>
+          <%= label_tag 'name'%><br />
+          <%= text_field_tag 'name'%> <br />
+          <%= label_tag 'subject'%><br />
+          <%= text_field_tag 'subject'%> <br />
+          <%= label_tag 'content'%><br />
+          <%= text_area_tag 'body'%><br />
+          <%= submit_tag 'Submit' %><br />
+        <% end -%>
+      </div>
+    </dd>
+  </dl>
+  
   <div id="map" style="width:400px;text-align:center;margin-top:20px;">
     <a rel="facebox" href="images/map.png"><img src="/images/map.png" style="width:170px; height:160px;"/></a>
   </div>
+  
 </div>
