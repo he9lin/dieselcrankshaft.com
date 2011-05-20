@@ -12,6 +12,7 @@ gem 'decent_exposure'
 gem 'thin'
 gem 'compass', '>= 0.11.1'
 gem 'paperclip', '~> 2.3.10'
+gem "nested_form"
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.6.0.rc6'
