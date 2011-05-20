@@ -44,6 +44,17 @@ $blueprint-font-size: 12px;
 
 body {
   background: url(/images/sidebg.png);
+  #filter_links {
+    height: 30px; 
+    li { float: left; }
+    a {
+      color: red;
+      display: inline-block;
+      padding: 2px 4px;
+      margin: 0px 2px;
+      &.selected { background-color: red; color: white; }
+    }
+  }
 	#flash {
 		margin-bottom: 10px;
 		div {

@@ -13,19 +13,17 @@
 <% end %>
 
 <div id="product_div" class="overview">
-  <div class = "images products" >
-    <a rel="facebox" class="product" href="images/products/6CT.jpg"><img src="images/products/6CT.png" alt="6CT"></a>
-    <a rel="facebox" class="product" href="images/products/BENZ OM442.jpg"><img src="images/products/BENZ.png" alt="BENZ"></a>
-    <a rel="facebox" class="product" href="images/products/CAT3306B.jpg" ><img src="images/products/CAT.png" alt="CAT"></a>
-    <a rel="facebox" class="product" href="images/products/Cummins M11 Crankshaft.jpg" ><img src="images/products/CumminsM11.png" alt="CumminsM11"></a>
-    <a rel="facebox" class="product" href="images/products/CUMMINS NT855.jpg" ><img src="images/products/CUMMINSNT855.png" alt="CUMMINSNT855"></a>
-    <a rel="facebox" class="product" href="images/products/DETUZ226B.jpg" ><img src="images/products/DETUZ2268.png" alt="DETUZ2268"></a>
-    <a rel="facebox" class="product" href="images/products/DOOSAN DL06 ed.jpg" ><img src="images/products/DOOSANDL06.png" alt="DOOSANDL06"></a>
-    <a rel="facebox" class="product" href="images/products/ISUZU6BD1.jpg.jpg" ><img src="images/products/ISUZU6BD1.png" alt="ISUZU6BD1"></a>
-    <a rel="facebox" class="product" href="images/products/k38.jpg" ><img src="images/products/k38.png" alt="K38"></a>
-    <a rel="facebox" class="product" href="images/products/k50.jpg" ><img src="images/products/k50.png" alt="K50"></a>
-    <a rel="facebox" class="product" href="images/products/Perkins.jpg"  ><img src="images/products/perkins.png" alt="Perkins"></a>
-    <a rel="facebox" class="product" href="images/products/Steyr618.jpg" ><img src="images/products/stey618.png" alt="Stey618"></a>
+  Select links to filter products
+  <ul id="filter_links">
+    <% Brand.all.each do |b| %>
+      <li><%= link_to_function b.name, 'Product.filter(this)', :id => dom_id(b) %></li>
+    <% end %>
+    <% Model.all.each do |b| %>
+      <li><%= link_to_function b.name, 'Product.filter(this)', :id => dom_id(b) %></li>
+    <% end %>
+  </ul>
+  <div class="images products" id="products_list">
+    <%= render products %>
   </div>
   <div class="notice">Didn’t see what you are looking for? No problem, we can even custom make the crankshaft you want.</div>
 </div>

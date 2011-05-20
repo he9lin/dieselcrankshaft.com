@@ -1,0 +1,4 @@
+<%= prod_box product do %>
+  <h4><%= product.name %></h4>
+  <%= link_to image_tag(product.pictures.first.image.url(:thumb)), product.pictures.first.image.url, :class => "product", :rel => "facebox" %>
+<% end %>

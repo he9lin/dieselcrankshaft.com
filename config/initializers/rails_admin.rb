@@ -1,14 +1,4 @@
 RailsAdmin.config do |config|
-  config.model Product do
-    edit do
-      field :name
-      field :description do
-        ckeditor true
-      end
-      field :pictures, :has_many_association
-    end
-  end
-  
   config.model Picture do
     list do
       field :name
@@ -20,5 +10,4 @@ RailsAdmin.config do |config|
       field :created_at
     end
   end
-  
 end
