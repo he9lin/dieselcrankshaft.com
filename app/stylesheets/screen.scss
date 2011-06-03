@@ -118,7 +118,7 @@ body {
           text-align: center;
           font-weight: bold; } } }
     #navbar {
-      padding: 65px 0 83px 30px;
+      padding: 65px 0 63px 30px;
       ul {
         li {
           padding-bottom: 2px;
@@ -158,6 +158,21 @@ body {
         margin-top: 1px;
         padding: 12px 10px 10px 10px; 
         background: url(/images/rightdot.png) repeat-y;
+				ul.equipments{ li{ float: left; margin-right: 4px;} }
+				&.products{ 
+					background: none; 
+					width: 620px; 
+					.scrolldiv{ 
+						width: 600px; 
+						.viewport{ 
+							width: 550px;
+							#product_div{ 
+								width: 545px;
+								#products_list{ 
+									div{ 
+										float: left;
+										.product_name{ margin: 20px 0 0 12px; } } } 
+								.clear{ clear: left; } } } } }
         width: 430px;
         float: left;
          #contacts {
@@ -188,4 +203,7 @@ body {
           color: red;
           font-size: 1.5em;
           font-weight: bold;
-          display: inline-block; } } } } }
+          display: inline-block; }
+ 				h4.slogan {
+					margin-left: 100px;
+					color: #AAA; } } } } }

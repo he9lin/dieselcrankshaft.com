@@ -1,7 +1,5 @@
 <%= content_for :slides do %>
-  <div><%= image_tag('truck.jpg')%></div>
-  <div><%= image_tag('truck3.jpg')%></div>
-  <div><%= image_tag('engine.jpg')%></div>
+  <div><%= image_tag('products/product-header.png')%></div>
 <% end %>
 
 <%= content_for :title do %>
@@ -25,5 +23,6 @@
   <div class="images products" id="products_list">
     <%= render products %>
   </div>
+  <div class="clear"></div>
   <div class="notice">Didn’t see what you are looking for? No problem, we can even custom make the crankshaft you want.</div>
 </div>

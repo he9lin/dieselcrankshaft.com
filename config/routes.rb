@@ -2,6 +2,7 @@ Cranker::Application.routes.draw do
   devise_for :users
   
   root :to => "home#index"
+  match 'equipments' => 'home#equipments', :as => :equipments
   match 'about'    => 'home#about',    :as => :about
   match 'contacts' => 'home#contacts', :as => :contacts
   post 'inquery' => 'home#inquery', :as => :inquery
