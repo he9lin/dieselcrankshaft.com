@@ -80,6 +80,7 @@ body {
     #content {  
       @include column(21, true); } }
   #container {
+		&.container_products{ background: white url(/images/bg_top_product.png) no-repeat;  }
     background: white url(/images/bg_top.png) no-repeat;
     color: $font-color;
     margin-top: 10px;
@@ -158,7 +159,13 @@ body {
         margin-top: 1px;
         padding: 12px 10px 10px 10px; 
         background: url(/images/rightdot.png) repeat-y;
-				ul.equipments{ li{ float: left; margin-right: 4px;} }
+				ul.equipments{ 
+					margin-left: 100px;
+					margin-top: 20px;
+					li{ 
+						float: left; margin-left: 8px;
+						img{ width: 200px; height: 160px; }
+						} }
 				&.products{ 
 					background: none; 
 					width: 620px; 

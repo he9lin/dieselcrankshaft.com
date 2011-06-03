@@ -387,19 +387,23 @@ caption {
 }
 
 /* line 2, ../../app/stylesheets/partials/_slides.scss */
+#slides.products {
+  margin-left: 100px;
+}
+/* line 3, ../../app/stylesheets/partials/_slides.scss */
 #slides ul.pagination {
   height: 20px;
   margin-top: 5px;
 }
-/* line 5, ../../app/stylesheets/partials/_slides.scss */
+/* line 6, ../../app/stylesheets/partials/_slides.scss */
 #slides ul.pagination li {
   float: left;
 }
-/* line 7, ../../app/stylesheets/partials/_slides.scss */
+/* line 8, ../../app/stylesheets/partials/_slides.scss */
 #slides ul.pagination li.current a {
   color: red;
 }
-/* line 8, ../../app/stylesheets/partials/_slides.scss */
+/* line 9, ../../app/stylesheets/partials/_slides.scss */
 #slides ul.pagination li a {
   text-decoration: none;
   font-weight: bold;
@@ -410,18 +414,18 @@ caption {
   display: inline-block;
   margin: 0 2px;
 }
-/* line 17, ../../app/stylesheets/partials/_slides.scss */
+/* line 18, ../../app/stylesheets/partials/_slides.scss */
 #slides .slides_container {
   width: 428px;
   height: 170px;
 }
-/* line 20, ../../app/stylesheets/partials/_slides.scss */
+/* line 21, ../../app/stylesheets/partials/_slides.scss */
 #slides .slides_container div {
   width: 428px;
   height: 170px;
   display: block;
 }
-/* line 24, ../../app/stylesheets/partials/_slides.scss */
+/* line 25, ../../app/stylesheets/partials/_slides.scss */
 #slides .slides_container div img {
   width: 428px;
   height: 170px;
@@ -528,19 +532,23 @@ body #container {
   -o-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
-/* line 90, ../../app/stylesheets/screen.scss */
+/* line 83, ../../app/stylesheets/screen.scss */
+body #container.container_products {
+  background: white url(/images/bg_top_product.png) no-repeat;
+}
+/* line 91, ../../app/stylesheets/screen.scss */
 body #container img.icon {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
-/* line 91, ../../app/stylesheets/screen.scss */
+/* line 92, ../../app/stylesheets/screen.scss */
 body #container #copyright {
   color: #666666;
   font-size: 0.8em;
   padding: 10px 0px 10px 285px;
 }
-/* line 95, ../../app/stylesheets/screen.scss */
+/* line 96, ../../app/stylesheets/screen.scss */
 body #container #footer {
   clear: both;
   padding: 10px 5px 6px 265px;
@@ -549,27 +557,27 @@ body #container #footer {
   margin-left: 1px;
   height: 16px;
 }
-/* line 102, ../../app/stylesheets/screen.scss */
+/* line 103, ../../app/stylesheets/screen.scss */
 body #container #footer ul {
   float: left;
 }
-/* line 104, ../../app/stylesheets/screen.scss */
+/* line 105, ../../app/stylesheets/screen.scss */
 body #container #footer ul li {
   float: left;
   padding: 0 5px;
 }
-/* line 107, ../../app/stylesheets/screen.scss */
+/* line 108, ../../app/stylesheets/screen.scss */
 body #container #footer ul li a {
   font-size: 0.9em;
   color: #666666;
 }
-/* line 109, ../../app/stylesheets/screen.scss */
+/* line 110, ../../app/stylesheets/screen.scss */
 body #container #sidebar .sidefill {
   margin-left: 1px;
   min-height: 588px;
   background: url(/images/leftdot.png) repeat-y;
 }
-/* line 113, ../../app/stylesheets/screen.scss */
+/* line 114, ../../app/stylesheets/screen.scss */
 body #container #sidebar .sidefill h3.news {
   margin: 0;
   padding: 10px 0;
@@ -578,20 +586,20 @@ body #container #sidebar .sidefill h3.news {
   text-align: center;
   font-weight: bold;
 }
-/* line 120, ../../app/stylesheets/screen.scss */
+/* line 121, ../../app/stylesheets/screen.scss */
 body #container #navbar {
   padding: 65px 0 63px 30px;
 }
-/* line 123, ../../app/stylesheets/screen.scss */
+/* line 124, ../../app/stylesheets/screen.scss */
 body #container #navbar ul li {
   padding-bottom: 2px;
 }
-/* line 125, ../../app/stylesheets/screen.scss */
+/* line 126, ../../app/stylesheets/screen.scss */
 body #container #navbar ul li.current a {
   color: #444;
   background: url(/images/dot.png) 0 50% no-repeat;
 }
-/* line 128, ../../app/stylesheets/screen.scss */
+/* line 129, ../../app/stylesheets/screen.scss */
 body #container #navbar ul li a {
   background: url(/images/circle.png) 0 50% no-repeat;
   padding-left: 18px;
@@ -603,21 +611,21 @@ body #container #navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 139, ../../app/stylesheets/screen.scss */
+/* line 140, ../../app/stylesheets/screen.scss */
 body #container #content ul {
   list-style: none;
 }
-/* line 141, ../../app/stylesheets/screen.scss */
+/* line 142, ../../app/stylesheets/screen.scss */
 body #container #content .image-wrapper {
   text-align: center;
 }
-/* line 142, ../../app/stylesheets/screen.scss */
+/* line 143, ../../app/stylesheets/screen.scss */
 body #container #content .rside-fill {
   float: left;
   width: 150px;
   padding-left: 15px;
 }
-/* line 146, ../../app/stylesheets/screen.scss */
+/* line 147, ../../app/stylesheets/screen.scss */
 body #container #content .rside-fill h3.side-header {
   margin: 0;
   padding: 10px 0;
@@ -626,7 +634,7 @@ body #container #content .rside-fill h3.side-header {
   text-align: center;
   font-weight: bold;
 }
-/* line 153, ../../app/stylesheets/screen.scss */
+/* line 154, ../../app/stylesheets/screen.scss */
 body #container #content .rside-fill ul li {
   text-align: center;
   padding-bottom: 10px;
@@ -657,7 +665,7 @@ body #container #content .rside-fill ul li .image-wrapper img {
   max-height: 134px;
   vertical-align: middle;
 }
-/* line 157, ../../app/stylesheets/screen.scss */
+/* line 158, ../../app/stylesheets/screen.scss */
 body #container #content #main-content {
   margin-top: 1px;
   padding: 12px 10px 10px 10px;
@@ -665,62 +673,72 @@ body #container #content #main-content {
   width: 430px;
   float: left;
 }
-/* line 161, ../../app/stylesheets/screen.scss */
+/* line 162, ../../app/stylesheets/screen.scss */
+body #container #content #main-content ul.equipments {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+/* line 165, ../../app/stylesheets/screen.scss */
 body #container #content #main-content ul.equipments li {
   float: left;
-  margin-right: 4px;
+  margin-left: 8px;
 }
-/* line 162, ../../app/stylesheets/screen.scss */
+/* line 167, ../../app/stylesheets/screen.scss */
+body #container #content #main-content ul.equipments li img {
+  width: 200px;
+  height: 160px;
+}
+/* line 169, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products {
   background: none;
   width: 620px;
 }
-/* line 165, ../../app/stylesheets/screen.scss */
+/* line 172, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv {
   width: 600px;
 }
-/* line 167, ../../app/stylesheets/screen.scss */
+/* line 174, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport {
   width: 550px;
 }
-/* line 169, ../../app/stylesheets/screen.scss */
+/* line 176, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport #product_div {
   width: 545px;
 }
-/* line 172, ../../app/stylesheets/screen.scss */
+/* line 179, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport #product_div #products_list div {
   float: left;
 }
-/* line 174, ../../app/stylesheets/screen.scss */
+/* line 181, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport #product_div #products_list div .product_name {
   margin: 20px 0 0 12px;
 }
-/* line 175, ../../app/stylesheets/screen.scss */
+/* line 182, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport #product_div .clear {
   clear: left;
 }
-/* line 178, ../../app/stylesheets/screen.scss */
+/* line 185, ../../app/stylesheets/screen.scss */
 body #container #content #main-content #contacts {
   padding: 5px 5px 5px 10px;
 }
-/* line 180, ../../app/stylesheets/screen.scss */
+/* line 187, ../../app/stylesheets/screen.scss */
 body #container #content #main-content #contacts span {
   margin-bottom: 10px;
   line-height: 50px;
 }
-/* line 181, ../../app/stylesheets/screen.scss */
+/* line 188, ../../app/stylesheets/screen.scss */
 body #container #content #main-content #contacts li.tel, body #container #content #main-content #contacts li.email {
   line-height: 20px;
   height: 20px;
   vertical-align: middle;
   padding: 2px 0;
 }
-/* line 186, ../../app/stylesheets/screen.scss */
+/* line 193, ../../app/stylesheets/screen.scss */
 body #container #content h3.sub-header {
   font-size: 1.2em;
   color: #666666;
 }
-/* line 189, ../../app/stylesheets/screen.scss */
+/* line 196, ../../app/stylesheets/screen.scss */
 body #container #content h2.header {
   background: url(/images/arrow1.jpg) 0 50% no-repeat;
   text-indent: 20px;
@@ -729,16 +747,16 @@ body #container #content h2.header {
   font-size: 1.5em;
   margin-bottom: 3px;
 }
-/* line 196, ../../app/stylesheets/screen.scss */
+/* line 203, ../../app/stylesheets/screen.scss */
 body #container #content #top-logo {
   height: 90px;
 }
-/* line 198, ../../app/stylesheets/screen.scss */
+/* line 205, ../../app/stylesheets/screen.scss */
 body #container #content #top-logo img {
   margin: 10px 5px 0px 20px;
   float: left;
 }
-/* line 201, ../../app/stylesheets/screen.scss */
+/* line 208, ../../app/stylesheets/screen.scss */
 body #container #content #top-logo h2 {
   padding-top: 24px;
   color: red;
@@ -746,7 +764,7 @@ body #container #content #top-logo h2 {
   font-weight: bold;
   display: inline-block;
 }
-/* line 207, ../../app/stylesheets/screen.scss */
+/* line 214, ../../app/stylesheets/screen.scss */
 body #container #content #top-logo h4.slogan {
   margin-left: 100px;
   color: #AAA;
