@@ -684,61 +684,65 @@ body #container #content #main-content ul.equipments li {
   margin-left: 8px;
 }
 /* line 167, ../../app/stylesheets/screen.scss */
-body #container #content #main-content ul.equipments li img {
-  width: 200px;
-  height: 160px;
+body #container #content #main-content ul.equipments li div {
+  width: 120px;
 }
-/* line 169, ../../app/stylesheets/screen.scss */
+/* line 168, ../../app/stylesheets/screen.scss */
+body #container #content #main-content ul.equipments li img {
+  width: 180px;
+  height: 140px;
+}
+/* line 170, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products {
   background: none;
   width: 620px;
 }
-/* line 172, ../../app/stylesheets/screen.scss */
+/* line 173, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv {
   width: 600px;
 }
-/* line 174, ../../app/stylesheets/screen.scss */
+/* line 175, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport {
   width: 550px;
 }
-/* line 176, ../../app/stylesheets/screen.scss */
+/* line 177, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport #product_div {
   width: 545px;
 }
-/* line 179, ../../app/stylesheets/screen.scss */
+/* line 180, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport #product_div #products_list div {
   float: left;
 }
-/* line 181, ../../app/stylesheets/screen.scss */
+/* line 182, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport #product_div #products_list div .product_name {
   margin: 20px 0 0 12px;
 }
-/* line 182, ../../app/stylesheets/screen.scss */
+/* line 183, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport #product_div .clear {
   clear: left;
 }
-/* line 185, ../../app/stylesheets/screen.scss */
+/* line 186, ../../app/stylesheets/screen.scss */
 body #container #content #main-content #contacts {
   padding: 5px 5px 5px 10px;
 }
-/* line 187, ../../app/stylesheets/screen.scss */
+/* line 188, ../../app/stylesheets/screen.scss */
 body #container #content #main-content #contacts span {
   margin-bottom: 10px;
   line-height: 50px;
 }
-/* line 188, ../../app/stylesheets/screen.scss */
+/* line 189, ../../app/stylesheets/screen.scss */
 body #container #content #main-content #contacts li.tel, body #container #content #main-content #contacts li.email {
   line-height: 20px;
   height: 20px;
   vertical-align: middle;
   padding: 2px 0;
 }
-/* line 193, ../../app/stylesheets/screen.scss */
+/* line 194, ../../app/stylesheets/screen.scss */
 body #container #content h3.sub-header {
   font-size: 1.2em;
   color: #666666;
 }
-/* line 196, ../../app/stylesheets/screen.scss */
+/* line 197, ../../app/stylesheets/screen.scss */
 body #container #content h2.header {
   background: url(/images/arrow1.jpg) 0 50% no-repeat;
   text-indent: 20px;
@@ -747,16 +751,16 @@ body #container #content h2.header {
   font-size: 1.5em;
   margin-bottom: 3px;
 }
-/* line 203, ../../app/stylesheets/screen.scss */
+/* line 204, ../../app/stylesheets/screen.scss */
 body #container #content #top-logo {
   height: 90px;
 }
-/* line 205, ../../app/stylesheets/screen.scss */
+/* line 206, ../../app/stylesheets/screen.scss */
 body #container #content #top-logo img {
   margin: 10px 5px 0px 20px;
   float: left;
 }
-/* line 208, ../../app/stylesheets/screen.scss */
+/* line 209, ../../app/stylesheets/screen.scss */
 body #container #content #top-logo h2 {
   padding-top: 24px;
   color: red;
@@ -764,7 +768,7 @@ body #container #content #top-logo h2 {
   font-weight: bold;
   display: inline-block;
 }
-/* line 214, ../../app/stylesheets/screen.scss */
+/* line 215, ../../app/stylesheets/screen.scss */
 body #container #content #top-logo h4.slogan {
   margin-left: 100px;
   color: #AAA;
