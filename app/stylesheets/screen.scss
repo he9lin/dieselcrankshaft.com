@@ -44,6 +44,9 @@ $blueprint-font-size: 12px;
 
 body {
   background: url(/images/sidebg.png);
+	#keyword-hide{
+		visibility: hidden;
+	}
   #filter_links {
     height: 30px; 
     li { float: left; }
@@ -175,7 +178,7 @@ body {
 						.viewport{ 
 							width: 550px;
 							#product_div{ 
-								width: 545px;
+								width: 535px;
 								#products_list{ 
 									div{ 
 										float: left;

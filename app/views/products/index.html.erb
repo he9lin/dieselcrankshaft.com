@@ -14,21 +14,10 @@
 <% end %>
 
 <div id="product_div" class="overview">
-  <div>We are specialized in making heavy-duty forging crankshaft, especially for most of the well known North and South America diesel engines. Our crankshafts are used in diesel generators, locomotive, marine diesel engines and etc. Please feel free to contact us for product catalog or certain crankshafts. Even if we don’t have what you are looking for, we can custom make it to fit your needs.</div>
+  <div class="text">We are specialized in making heavy-duty forging crankshaft, especially for most of the well known North and South America diesel engines. Our crankshafts are used in diesel generators, locomotive, marine diesel engines and etc. Please feel free to contact us for product catalog or certain crankshafts. Even if we don’t have what you are looking for, we can custom make it to fit your needs.</div>
   <br/>
-  <br/>
-  <h5>Select links to filter products</h5>
-  <ul id="filter_links">
-    <% Brand.all.each do |b| %>
-      <li><%= link_to_function b.name, 'Product.filter(this)', :id => dom_id(b) %></li>
-    <% end %>
-    <% Model.all.each do |b| %>
-      <li><%= link_to_function b.name, 'Product.filter(this)', :id => dom_id(b) %></li>
-    <% end %>
-  </ul>
   <div class="images products" id="products_list">
     <%= render products %>
   </div>
   <div class="clear"></div>
-  <div class="notice">Didn’t see what you are looking for? No problem, we can even custom make the crankshaft you want.</div>
 </div>

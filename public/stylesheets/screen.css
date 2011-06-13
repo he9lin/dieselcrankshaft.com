@@ -372,6 +372,10 @@ caption {
   padding-left: 50px;
 }
 /* line 3, ../../app/stylesheets/partials/_products.scss */
+#product_div div.text {
+  width: 500px;
+}
+/* line 6, ../../app/stylesheets/partials/_products.scss */
 #product_div a.product {
   display: inline-block;
   width: 120px;
@@ -379,7 +383,7 @@ caption {
   margin: 15px;
   background: url(/images/frame.png) no-repeat;
 }
-/* line 8, ../../app/stylesheets/partials/_products.scss */
+/* line 11, ../../app/stylesheets/partials/_products.scss */
 #product_div a.product img {
   padding: 11px;
   width: 100px;
@@ -436,30 +440,34 @@ body {
   background: url(/images/sidebg.png);
 }
 /* line 47, ../../app/stylesheets/screen.scss */
+body #keyword-hide {
+  visibility: hidden;
+}
+/* line 50, ../../app/stylesheets/screen.scss */
 body #filter_links {
   height: 30px;
 }
-/* line 49, ../../app/stylesheets/screen.scss */
+/* line 52, ../../app/stylesheets/screen.scss */
 body #filter_links li {
   float: left;
 }
-/* line 50, ../../app/stylesheets/screen.scss */
+/* line 53, ../../app/stylesheets/screen.scss */
 body #filter_links a {
   color: red;
   display: inline-block;
   padding: 2px 4px;
   margin: 0px 2px;
 }
-/* line 55, ../../app/stylesheets/screen.scss */
+/* line 58, ../../app/stylesheets/screen.scss */
 body #filter_links a.selected {
   background-color: red;
   color: white;
 }
-/* line 58, ../../app/stylesheets/screen.scss */
+/* line 61, ../../app/stylesheets/screen.scss */
 body #flash {
   margin-bottom: 10px;
 }
-/* line 60, ../../app/stylesheets/screen.scss */
+/* line 63, ../../app/stylesheets/screen.scss */
 body #flash div {
   text-align: center;
   padding: 5px;
@@ -467,30 +475,30 @@ body #flash div {
   color: #333;
   background-color: yellow;
 }
-/* line 66, ../../app/stylesheets/screen.scss */
+/* line 69, ../../app/stylesheets/screen.scss */
 body #flash div.error {
   background-color: red;
 }
-/* line 68, ../../app/stylesheets/screen.scss */
+/* line 71, ../../app/stylesheets/screen.scss */
 body #inquery-form input#subject {
   width: 205px;
 }
-/* line 69, ../../app/stylesheets/screen.scss */
+/* line 72, ../../app/stylesheets/screen.scss */
 body #inquery-form textarea {
   width: 200px;
   height: 90px;
 }
-/* line 72, ../../app/stylesheets/screen.scss */
+/* line 75, ../../app/stylesheets/screen.scss */
 body ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-/* line 73, ../../app/stylesheets/screen.scss */
+/* line 76, ../../app/stylesheets/screen.scss */
 body .clear {
   clear: left;
 }
-/* line 74, ../../app/stylesheets/screen.scss */
+/* line 77, ../../app/stylesheets/screen.scss */
 body .two-col {
   width: 950px;
   margin: 0 auto;
@@ -498,12 +506,12 @@ body .two-col {
   *zoom: 1;
   width: 800px;
 }
-/* line 77, ../../app/stylesheets/screen.scss */
+/* line 80, ../../app/stylesheets/screen.scss */
 body .two-col #sidebar {
   width: 156px;
   float: left;
 }
-/* line 80, ../../app/stylesheets/screen.scss */
+/* line 83, ../../app/stylesheets/screen.scss */
 body .two-col #content {
   display: inline;
   float: left;
@@ -514,7 +522,7 @@ body .two-col #content {
 * html body .two-col #content {
   overflow-x: hidden;
 }
-/* line 82, ../../app/stylesheets/screen.scss */
+/* line 85, ../../app/stylesheets/screen.scss */
 body #container {
   background: white url(/images/bg_top.png) no-repeat;
   color: #444444;
@@ -532,23 +540,23 @@ body #container {
   -o-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
-/* line 83, ../../app/stylesheets/screen.scss */
+/* line 86, ../../app/stylesheets/screen.scss */
 body #container.container_products {
   background: white url(/images/bg_top_product.png) no-repeat;
 }
-/* line 91, ../../app/stylesheets/screen.scss */
+/* line 94, ../../app/stylesheets/screen.scss */
 body #container img.icon {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
-/* line 92, ../../app/stylesheets/screen.scss */
+/* line 95, ../../app/stylesheets/screen.scss */
 body #container #copyright {
   color: #666666;
   font-size: 0.8em;
   padding: 10px 0px 10px 285px;
 }
-/* line 96, ../../app/stylesheets/screen.scss */
+/* line 99, ../../app/stylesheets/screen.scss */
 body #container #footer {
   clear: both;
   padding: 10px 5px 6px 265px;
@@ -557,27 +565,27 @@ body #container #footer {
   margin-left: 1px;
   height: 16px;
 }
-/* line 103, ../../app/stylesheets/screen.scss */
+/* line 106, ../../app/stylesheets/screen.scss */
 body #container #footer ul {
   float: left;
 }
-/* line 105, ../../app/stylesheets/screen.scss */
+/* line 108, ../../app/stylesheets/screen.scss */
 body #container #footer ul li {
   float: left;
   padding: 0 5px;
 }
-/* line 108, ../../app/stylesheets/screen.scss */
+/* line 111, ../../app/stylesheets/screen.scss */
 body #container #footer ul li a {
   font-size: 0.9em;
   color: #666666;
 }
-/* line 110, ../../app/stylesheets/screen.scss */
+/* line 113, ../../app/stylesheets/screen.scss */
 body #container #sidebar .sidefill {
   margin-left: 1px;
   min-height: 588px;
   background: url(/images/leftdot.png) repeat-y;
 }
-/* line 114, ../../app/stylesheets/screen.scss */
+/* line 117, ../../app/stylesheets/screen.scss */
 body #container #sidebar .sidefill h3.news {
   margin: 0;
   padding: 10px 0;
@@ -586,20 +594,20 @@ body #container #sidebar .sidefill h3.news {
   text-align: center;
   font-weight: bold;
 }
-/* line 121, ../../app/stylesheets/screen.scss */
+/* line 124, ../../app/stylesheets/screen.scss */
 body #container #navbar {
   padding: 65px 0 63px 30px;
 }
-/* line 124, ../../app/stylesheets/screen.scss */
+/* line 127, ../../app/stylesheets/screen.scss */
 body #container #navbar ul li {
   padding-bottom: 2px;
 }
-/* line 126, ../../app/stylesheets/screen.scss */
+/* line 129, ../../app/stylesheets/screen.scss */
 body #container #navbar ul li.current a {
   color: #444;
   background: url(/images/dot.png) 0 50% no-repeat;
 }
-/* line 129, ../../app/stylesheets/screen.scss */
+/* line 132, ../../app/stylesheets/screen.scss */
 body #container #navbar ul li a {
   background: url(/images/circle.png) 0 50% no-repeat;
   padding-left: 18px;
@@ -611,21 +619,21 @@ body #container #navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 140, ../../app/stylesheets/screen.scss */
+/* line 143, ../../app/stylesheets/screen.scss */
 body #container #content ul {
   list-style: none;
 }
-/* line 142, ../../app/stylesheets/screen.scss */
+/* line 145, ../../app/stylesheets/screen.scss */
 body #container #content .image-wrapper {
   text-align: center;
 }
-/* line 143, ../../app/stylesheets/screen.scss */
+/* line 146, ../../app/stylesheets/screen.scss */
 body #container #content .rside-fill {
   float: left;
   width: 150px;
   padding-left: 15px;
 }
-/* line 147, ../../app/stylesheets/screen.scss */
+/* line 150, ../../app/stylesheets/screen.scss */
 body #container #content .rside-fill h3.side-header {
   margin: 0;
   padding: 10px 0;
@@ -634,7 +642,7 @@ body #container #content .rside-fill h3.side-header {
   text-align: center;
   font-weight: bold;
 }
-/* line 154, ../../app/stylesheets/screen.scss */
+/* line 157, ../../app/stylesheets/screen.scss */
 body #container #content .rside-fill ul li {
   text-align: center;
   padding-bottom: 10px;
@@ -665,7 +673,7 @@ body #container #content .rside-fill ul li .image-wrapper img {
   max-height: 134px;
   vertical-align: middle;
 }
-/* line 158, ../../app/stylesheets/screen.scss */
+/* line 161, ../../app/stylesheets/screen.scss */
 body #container #content #main-content {
   margin-top: 1px;
   padding: 12px 10px 10px 10px;
@@ -673,76 +681,76 @@ body #container #content #main-content {
   width: 430px;
   float: left;
 }
-/* line 162, ../../app/stylesheets/screen.scss */
+/* line 165, ../../app/stylesheets/screen.scss */
 body #container #content #main-content ul.equipments {
   margin-left: 100px;
   margin-top: 20px;
 }
-/* line 165, ../../app/stylesheets/screen.scss */
+/* line 168, ../../app/stylesheets/screen.scss */
 body #container #content #main-content ul.equipments li {
   float: left;
   margin-left: 8px;
 }
-/* line 167, ../../app/stylesheets/screen.scss */
+/* line 170, ../../app/stylesheets/screen.scss */
 body #container #content #main-content ul.equipments li div {
   width: 120px;
 }
-/* line 168, ../../app/stylesheets/screen.scss */
+/* line 171, ../../app/stylesheets/screen.scss */
 body #container #content #main-content ul.equipments li img {
   width: 180px;
   height: 140px;
 }
-/* line 170, ../../app/stylesheets/screen.scss */
+/* line 173, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products {
   background: none;
   width: 620px;
 }
-/* line 173, ../../app/stylesheets/screen.scss */
+/* line 176, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv {
   width: 600px;
 }
-/* line 175, ../../app/stylesheets/screen.scss */
+/* line 178, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport {
   width: 550px;
 }
-/* line 177, ../../app/stylesheets/screen.scss */
-body #container #content #main-content.products .scrolldiv .viewport #product_div {
-  width: 545px;
-}
 /* line 180, ../../app/stylesheets/screen.scss */
+body #container #content #main-content.products .scrolldiv .viewport #product_div {
+  width: 535px;
+}
+/* line 183, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport #product_div #products_list div {
   float: left;
 }
-/* line 182, ../../app/stylesheets/screen.scss */
+/* line 185, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport #product_div #products_list div .product_name {
   margin: 20px 0 0 12px;
 }
-/* line 183, ../../app/stylesheets/screen.scss */
+/* line 186, ../../app/stylesheets/screen.scss */
 body #container #content #main-content.products .scrolldiv .viewport #product_div .clear {
   clear: left;
 }
-/* line 186, ../../app/stylesheets/screen.scss */
+/* line 189, ../../app/stylesheets/screen.scss */
 body #container #content #main-content #contacts {
   padding: 5px 5px 5px 10px;
 }
-/* line 188, ../../app/stylesheets/screen.scss */
+/* line 191, ../../app/stylesheets/screen.scss */
 body #container #content #main-content #contacts span {
   margin-bottom: 10px;
   line-height: 50px;
 }
-/* line 189, ../../app/stylesheets/screen.scss */
+/* line 192, ../../app/stylesheets/screen.scss */
 body #container #content #main-content #contacts li.tel, body #container #content #main-content #contacts li.email {
   line-height: 20px;
   height: 20px;
   vertical-align: middle;
   padding: 2px 0;
 }
-/* line 194, ../../app/stylesheets/screen.scss */
+/* line 197, ../../app/stylesheets/screen.scss */
 body #container #content h3.sub-header {
   font-size: 1.2em;
   color: #666666;
 }
-/* line 197, ../../app/stylesheets/screen.scss */
+/* line 200, ../../app/stylesheets/screen.scss */
 body #container #content h2.header {
   background: url(/images/arrow1.jpg) 0 50% no-repeat;
   text-indent: 20px;
@@ -751,16 +759,16 @@ body #container #content h2.header {
   font-size: 1.5em;
   margin-bottom: 3px;
 }
-/* line 204, ../../app/stylesheets/screen.scss */
+/* line 207, ../../app/stylesheets/screen.scss */
 body #container #content #top-logo {
   height: 90px;
 }
-/* line 206, ../../app/stylesheets/screen.scss */
+/* line 209, ../../app/stylesheets/screen.scss */
 body #container #content #top-logo img {
   margin: 10px 5px 0px 20px;
   float: left;
 }
-/* line 209, ../../app/stylesheets/screen.scss */
+/* line 212, ../../app/stylesheets/screen.scss */
 body #container #content #top-logo h2 {
   padding-top: 24px;
   color: red;
@@ -768,7 +776,7 @@ body #container #content #top-logo h2 {
   font-weight: bold;
   display: inline-block;
 }
-/* line 215, ../../app/stylesheets/screen.scss */
+/* line 218, ../../app/stylesheets/screen.scss */
 body #container #content #top-logo h4.slogan {
   margin-left: 100px;
   color: #AAA;
