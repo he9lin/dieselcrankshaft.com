@@ -15,32 +15,13 @@
   How to Find Us
 <% end %>
 
+<%= content_for :js do %>
+  <script> App.loadContent('#contacts .info', "http://www.heyook.com/dieselcrankshafts.com/contacts.html"); </script>
+<% end %>
+
 <div id="contacts" class="overview">
-  <dl>
-    <dt>Address:</dt>
-    <dd>
-      No.97 Beihuan Road Dandong City<br />
-      Liaoning Province P. R. China<br />
-    </dd>
-  </dl>
-  <dl>
-    <dt>China</dt>
-    <dd>
-      <ul>
-        <li class="tel"><img class="icon" src="/images/tel.jpeg"/><span>Tel/Fax: (86-20-3721-7971)</span></li> 
-        <li class="email"><img class="icon" src="/images/email.jpeg"/><a href="mailto:gzym_qp@hotmail.com"><span>gzym_qp@hotmail.com</span></a></li>
-      </ul>
-    </dd>
-  </dl>
-  <dl>
-    <dt>US</dt>
-    <dd>
-      <ul>
-        <li class="tel"><img class="icon" src="/images/tel.jpeg"/><span>Tel: (626-628-4100)</span></li>
-        <li class="email"><img class="icon" src="/images/email.jpeg"/><a href="mailto:crankshaft518@gmail.com"><span>crankshaft518@gmail.com</span></a></li>
-      </ul>
-    </dd>
-  </dl>
+  <div class="info">
+  </div>
   <br />
   <dl>
     <dt>Submit your inquery here!</dt>

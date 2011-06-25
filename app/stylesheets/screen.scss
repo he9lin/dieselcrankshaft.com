@@ -44,6 +44,13 @@ $blueprint-font-size: 12px;
 
 body {
   background: url(/images/sidebg.png);
+
+	.scrolldiv .viewport .overview {
+		height: 700px;
+	}
+	
+	#product_div{ min-height: 1000px; }
+
 	#keyword-hide{
 		visibility: hidden;
 	}

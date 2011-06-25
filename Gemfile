@@ -14,6 +14,7 @@ gem 'paperclip', '~> 2.3.10'
 gem "nested_form"
 gem 'decent_exposure'
 gem 'rake', '0.8.7'
+gem 'httparty'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.6.0.rc6'

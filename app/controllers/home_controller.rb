@@ -2,6 +2,8 @@ class HomeController < ApplicationController
   
   layout :resolve_layout
   
+  respond_to :html, :j
+  
   def index
   end
   
@@ -12,6 +14,10 @@ class HomeController < ApplicationController
   end
   
   def contacts
+  end
+  
+  def load
+    @body = HTTParty.get(params['url']).body.html_safe
   end
   
   def inquery
@@ -31,6 +37,8 @@ class HomeController < ApplicationController
     case action_name
     when "equipments", "contacts"
       "product"
+    when "load"
+      nil
     else
       "application"
     end

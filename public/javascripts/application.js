@@ -18,7 +18,19 @@ var Product = {
       })
     }
   }
-}
+};
+
+var App = {
+	loadContent: function(dom_id, url){
+		$.ajax({
+		   type: "GET",
+		   url: "/load?url="+url,
+		   success: function(data){
+		     $(dom_id).html(data);
+		   }
+		 });
+	}
+};
 
 $(document).ready(function() {
   $('a[rel*=facebox]').facebox();
@@ -36,4 +48,7 @@ $(document).ready(function() {
     if ($(this).parent().hasClass('current')) return;
     $(this).stop().animate({color: '#aaa'}, 1000)
   })
+	
+	App.loadContent('#news_updates', "http://heyook.com/dieselcrankshafts.com/news.html");
+	
 })
