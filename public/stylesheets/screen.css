@@ -443,6 +443,10 @@ body {
 body .scrolldiv .viewport .overview {
   height: 700px;
 }
+/* line 51, ../../app/stylesheets/screen.scss */
+body #about_div {
+  height: 850px;
+}
 /* line 52, ../../app/stylesheets/screen.scss */
 body #product_div {
   min-height: 1000px;

@@ -27,6 +27,7 @@ var App = {
 		   url: "/load?url="+url,
 		   success: function(data){
 		     $(dom_id).html(data);
+		     $('a[rel*=facebox]').facebox();
 		   }
 		 });
 	}
