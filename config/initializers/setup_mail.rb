@@ -3,7 +3,7 @@ ActionMailer::Base.smtp_settings = {
   :port                 => 587,  
   :domain               => "dieselcrankshaft.com",  
   :user_name            => "cranker518",  
-  :password             => "Shaft518",  
+  :password             => "Shaft518_",  
   :authentication       => "plain",  
   :enable_starttls_auto => true  
 }
