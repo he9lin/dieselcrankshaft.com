@@ -26,7 +26,7 @@ class HomeController < ApplicationController
       redirect_to contacts_url
     else 
       CustomerMailer.inquery(params).deliver 
-      flash[:notice] = "Your inquery has been sucsessfully submitted!"
+      flash[:notice] = "Your inquery has been successfully submitted!"
       redirect_to root_url 
     end
   end
