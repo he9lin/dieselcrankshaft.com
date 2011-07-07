@@ -786,9 +786,10 @@ body #container #content #top-logo h2 {
   color: red;
   font-size: 1.5em;
   font-weight: bold;
+  margin-left: 120px;
   display: inline-block;
 }
-/* line 225, ../../app/stylesheets/screen.scss */
+/* line 226, ../../app/stylesheets/screen.scss */
 body #container #content #top-logo h4.slogan {
   margin-left: 100px;
   color: #AAA;
