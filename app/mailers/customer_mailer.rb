@@ -3,7 +3,7 @@ class CustomerMailer < ActionMailer::Base
 
   def inquery(params)  
     @params = params
-    mail(:to => "cranker518@gmail.com", :subject => "dieselcrankshaft.com inquery: #{params[:subject]}")  
+    mail(:to => "fredrickxin@yahoo.com", :subject => "dieselcrankshaft.com inquery: #{params[:subject]}")  
   end
   
 end
